@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客</title>
+</head>
+<body>
+    <div id="content">
+
+    </div>
+    <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            let index = window.location.pathname.indexOf("#")
+            if (index == -1) {
+                document.getElementById('content').innerHTML = `
+go
+<blockquote>
+gin
+<blockquote>
+<a href="blog/go/gin/router.go">router.go</a><br></blockquote>
+<a href="blog/go/gin/main.go">main.go</a><br></blockquote>
+<a href="blog/go/gin/go.md">go.md</a><br><a href="blog/go/gin/hello.md">hello.md</a><br>
+`
+} else {
+                var xhr;
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject(Microsoft.XMLHttp);
+                }
+    
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == 4 && xhr.status == 200) {
+                        var s = marked.parse(xhr.responseText);
+                        document.getElementById(content).innerHTML = s;
+                        console.log(s)
+                    }
+                }
+                let location = window.location.pathname.substring(index + 1)
+                xhr.open(GET, "https://go75.github.io/blog/"+window.location.hash)
+                xhr.send()
+            }
+            xhr.open(GET, "https://go75.github.io/README.md");
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
