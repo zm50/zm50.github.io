@@ -29,15 +29,16 @@ echo '`' >> ./blog.html
 echo '} else {
                 var xhr;
                 if (window.XMLHttpRequest) {
-                    xhr = new XMLHttpRequest();
+                    xhr = new XMLHttpRequest()
                 } else {
-                    xhr = new ActiveXObject('Microsoft.XMLHttp');
+                    xhr = new ActiveXObject('Microsoft.XMLHttp')
                 }
     
                 xhr.onreadystatechange = function() {
                     if(xhr.readyState == 4 && xhr.status == 200) {
-                        var s = marked.parse(xhr.responseText);
-                        document.getElementById('content').innerHTML = s;
+                        var s = marked.parse(xhr.responseText)
+                        document.getElementById("content").innerHTML = s
+                        console.log(s)    
                     }
                 }
                 console.log("https://go75.github.io/blog/"+path)
