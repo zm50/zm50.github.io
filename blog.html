@@ -12,7 +12,8 @@
     <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
     <script type="text/javascript">
         window.onload = function() {
-            if (!window.location.hash) {
+            let path = window.location.search('path')
+            if (!path) {
                 document.getElementById('content').innerHTML = `
 docker
 <blockquote>

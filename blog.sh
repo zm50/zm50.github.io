@@ -20,7 +20,7 @@ dfs(){
 
 dfs "./blog"
 
-sed -i '17,$ d' ./blog.html
+sed -i '18,$ d' ./blog.html
 
 echo $s >> ./blog.html
 
