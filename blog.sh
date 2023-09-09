@@ -12,8 +12,8 @@ dfs(){
             dfs $1/$file
             s=$s'</blockquote>\n'
         else
-            pre=${1#??}
-            s=$s"<a href=\"$pre/$file\">$file</a><br>"
+            src=blog#${1#???????}/$file
+            s=$s"<a href=\"$src\">$file</a><br>"
         fi
     done
 }
