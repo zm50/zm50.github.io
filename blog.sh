@@ -41,7 +41,7 @@ echo '} else {
                     }
                 }
                 console.log("https://go75.github.io/blog/"+path)
-                xhr.open(GET, "https://go75.github.io/blog/"+path)
+                xhr.open("GET", "https://go75.github.io/blog/"+path)
                 xhr.send()
             }
         }
