@@ -11,53 +11,26 @@
     </div>
     <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
     <script type="text/javascript">
-        window.onload = function() {
-            let path = window.location.hash.substring(1)
-            if (!path) {
-                document.getElementById('content').innerHTML = `
-docker
-<blockquote>
-</blockquote>
-etcd
-<blockquote>
-</blockquote>
-gin
-<blockquote>
-</blockquote>
-go
-<blockquote>
-<a href="https://go75.github.io/blog#go/hello.md">hello.md</a><br></blockquote>
-gorm
-<blockquote>
-</blockquote>
-grpc
-<blockquote>
-</blockquote>
-kubernetes
-<blockquote>
-</blockquote>
+    let path = window.location.hash.substring(1)
+    if (!path) {
+        document.getElementById('content').innerHTML = '<h2>文件资源不存在</h2>'
+    } else {
+        var xhr;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest()
+        } else {
+            xhr = new ActiveXObject(Microsoft.XMLHttp)
+        }
 
-`
-} else {
-                var xhr;
-                if (window.XMLHttpRequest) {
-                    xhr = new XMLHttpRequest()
-                } else {
-                    xhr = new ActiveXObject(Microsoft.XMLHttp)
-                }
-    
-                xhr.onreadystatechange = function() {
-                    if(xhr.readyState == 4 && xhr.status == 200) {
-                        var s = marked.parse(xhr.responseText)
-                        document.getElementById("content").innerHTML = s
-                        console.log(s)    
-                    }
-                }
-                console.log("https://go75.github.io/blog/"+path)
-                xhr.open("GET", "https://go75.github.io/blog/"+path)
-                xhr.send()
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                var s = marked.parse(xhr.responseText)
+                document.getElementById("content").innerHTML = s
             }
         }
+        xhr.open("GET", "https://go75.github.io/blog/"+path)
+        xhr.send()
+    }
     </script>
 </body>
 </html>
