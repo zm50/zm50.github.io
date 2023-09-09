@@ -12,7 +12,7 @@ dfs(){
             dfs $1/$file
             s=$s'</blockquote>\n'
         else
-            src=blog#${1#???????}/$file
+            src=https://go75.github.io/blog#${1#???????}/$file
             s=$s"<a href=\"$src\">$file</a><br>"
         fi
     done
