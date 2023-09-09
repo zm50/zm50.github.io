@@ -12,16 +12,30 @@
     <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
     <script type="text/javascript">
         window.onload = function() {
-            let index = window.location.pathname.indexOf("#")
-            if (index == -1) {
+            if (!window.location.hash) {
                 document.getElementById('content').innerHTML = `
-go
+docker
 <blockquote>
+</blockquote>
+etcd
+<blockquote>
+</blockquote>
 gin
 <blockquote>
-<a href="blog/go/gin/router.go">router.go</a><br></blockquote>
-<a href="blog/go/gin/main.go">main.go</a><br></blockquote>
-<a href="blog/go/gin/go.md">go.md</a><br><a href="blog/go/gin/hello.md">hello.md</a><br>
+</blockquote>
+go
+<blockquote>
+<a href="blog/go/hello.md">hello.md</a><br></blockquote>
+gorm
+<blockquote>
+</blockquote>
+grpc
+<blockquote>
+</blockquote>
+kubernetes
+<blockquote>
+</blockquote>
+
 `
 } else {
                 var xhr;
@@ -42,8 +56,6 @@ gin
                 xhr.open(GET, "https://go75.github.io/blog/"+window.location.hash)
                 xhr.send()
             }
-            xhr.open(GET, "https://go75.github.io/README.md");
-            xhr.send();
         }
     </script>
 </body>

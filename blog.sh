@@ -3,25 +3,24 @@
 s=""
 
 dfs(){
-    prefix=$1
-    for file in $(ls $prefix)
+    for file in $(ls $1)
     do
-        if [ -d "$prefix/$file" ];
+        if [ -d "$1/$file" ];
         then
             s=$s$file'\n'
             s=$s'<blockquote>\n'
-            dfs $prefix/$file
+            dfs $1/$file
             s=$s'</blockquote>\n'
         else
-        pre=${prefix#??}
-        s=$s"<a href=\"$pre/$file\">$file</a><br>"
+            pre=${1#??}
+            s=$s"<a href=\"$pre/$file\">$file</a><br>"
         fi
     done
 }
 
 dfs "./blog"
 
-sed -i '18,$ d' ./blog.html
+sed -i '17,$ d' ./blog.html
 
 echo $s >> ./blog.html
 
@@ -46,8 +45,6 @@ echo '} else {
                 xhr.open(GET, "https://go75.github.io/blog/"+window.location.hash)
                 xhr.send()
             }
-            xhr.open('GET', "https://go75.github.io/README.md");
-            xhr.send();
         }
     </script>
 </body>
