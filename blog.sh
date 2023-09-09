@@ -41,8 +41,7 @@ echo '} else {
                         console.log(s)
                     }
                 }
-                let location = window.location.pathname.substring(index + 1)
-                xhr.open(GET, "https://go75.github.io/blog/"+window.location.hash)
+                xhr.open(GET, "https://go75.github.io/blog/"+path)
                 xhr.send()
             }
         }
