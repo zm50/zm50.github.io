@@ -38,7 +38,6 @@ echo '} else {
                     if(xhr.readyState == 4 && xhr.status == 200) {
                         var s = marked.parse(xhr.responseText);
                         document.getElementById('content').innerHTML = s;
-                        console.log(s)
                     }
                 }
                 console.log("https://go75.github.io/blog/"+path)
