@@ -1,229 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>简历</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/typo.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
 </head>
-
 <body>
+    <h3>基本信息</h3>
+    <ul>
+        <li>
+            姓名: 陈士博
+        </li>                    
+        <li> 
+            学校: 河南师范大学(本科) 2021 - 2025
+        </li>                    
+        <li>
+            专业: 计算机科学与技术
+        </li>
+    </ul>
 
-    <header class="header"></header>
+    <hr>
 
-    <article class="container">
-        <section class="side" id="side">
+    <h3>求职意向</h3>
+    <ul>
+        <li>
+            求职岗位: c++开发实习生
+        </li>
+    </ul>
 
-            <!-- 个人肖像 -->
-            <section class="me">
-                <img class="avatar" src="assets/images/avatar.jpg" >
-            </section>
+    <hr>
 
-            <!-- 基本信息 -->
-            <section class="profile info-unit">
-                <h2><i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
-                <hr/>
+    <h3>联系方式</h3>
+    <ul>
+        <li>手机: 15737391075</li>
+        <li>邮箱: 2548604505@qq.com</li>
+        <li>博客: <a href="https://blog.csdn.net/qq_67733273">blog.csdn.net/qq_67733273</a></li>
+        <li>Gitee: <a href="https://gitee.com/go75">gitee.com/go75</a></li>
+        <li>Github: <a href="https://github.com/go75">github.com/go75</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>专业技能</h3>
+    <ul>
+        <li>
+            C++, QT,MySQL, HTTP, TCP, UDP, Linux, Git, Markdown, Shell, Docker, 操作系统, 计算机网络, 数据结构
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>获得证书</h3>
+    <ul>
+        <li>
+            字节跳动青训营证书
                 <ul>
-                    <li>
-                        <label>个人</label>
-                        <span>陈士博  男  20岁</span>
-                    </li>
-                    <li>
-                      <label>学校</label>
-                      <span>河南师范大学 本科</span>
-                    </li>
-                    <li>
-                        <label>时间</label>
-                        <span>2021 - 2025</span>
-                    </li>
-                    <li>
-                        <label>专业</label>
-                        <span>计算机科学与技术</span>
-                    </li>
-                    <li>
-                        <label>居住地</label>
-                        <span>河南 郑州</span>
-                    </li>
+                    <li>简介: 青训营是字节跳动 ByteTech 社区发起的技术培训 & 人才选拔项目，面向在校大学生，旨在培养优秀且具有职业竞争力的开发工程师。</li>
+                    <li>证书地址: <a href="assets/images/cert.png">https://go75.github.io/assets/images/cert.png</a></li>
                 </ul>
-            </section>
+        </li>
+    </ul>
 
-            <!-- 求职意向 -->
-            <section class="profile info-unit">
-                <h2><i class="fa fa-paper-plane-o" aria-hidden="true"></i>求职意向</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>求职岗位</label>
-                        <span>c++开发实习生</span>
-                    </li>
-                </ul>
-            </section>
+    <hr>
 
-            <!-- 联系方式 -->
-            <section class="contact info-unit">
-                <h2>
-                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>手机</label>
-                        159-3736-1403
-                    </li>
-                    <li>
-                        <label>邮箱</label>
-                        2548604505@qq.com
-                    </li>
-                    <li>
-                        <label>博客</label>
-                        <a href="https://blog.csdn.net/qq_67733273" target="_blank">blog.csdn.net/qq_67733273</a>
-                    </li>
-                    <li>
-                        <label>Gitee</label>
-                        <a href="https://gitee.com/go75">gitee.com/go75</a>
-                    </li>
-                    <li>
-                        <label>Github</label>
-                        <a href="https://github.com/go75" target="_blank">github.com/go75</a>
-                    </li>
-                </ul>
-            </section>
+    <h3>项目经历</h3>
+    <ul>
+        <li>
+            <h4>文件共享系统</h4>
+            <ul>
+                <li>客户端代码地址: <a href="https://github.com/go75/file-sharing-client">https://github.com/go75/file-sharing-client</a></li>
+                <li>服务端代码地址: <a href="https://github.com/go75/file-sharing-server">https://github.com/go75/file-sharing-server</a></li>
+                <li>项目介绍: P2P共享文件软件的制作, 设计环境是mysql8, ubuntu22.04与QT5.15. 实现的功能包括用户的注册与登录, 用户共享文件的上传, 删除与下载. 同时也具有精确搜索的功能, 用户可以通过搜索结果确定要下载的文件. 服务端保存用户数据, 用户共享文件的基本信息</li>
+                <li>技术栈: C++ Qt MySQL TCP</li>
+                <li>贡献: 需求分析, 架构设计, 数据库设计, 通信协议设计, 接口设计, 代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>即时通信系统</h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/im">https://github.com/go75/im</a></li>
+                <li>项目介绍: 用户登录注册, 添加好友, 创建群聊, 添加群聊, 实现私聊, 群聊, 支持文本消息, 图片消息, 录音等多种消息消息类型, 支持玩家间五子棋对战</li>
+                <li>贡献: 需求分析, 系统设计, 数据库设计, 项目结构设计, 通信协议设计, 接口设计, 业务拆分, 文档编写, 通信协议的封装, 使用生产者、消费者等模型来处理数据, 设计统一消息格式, 前端页面编写, 后端代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>书签管理器</h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/bookmark-manager-">https://github.com/go75/bookmark-manager-</a></li>
+                <li>项目介绍: 管理用户的书签内容, 支持书签的插入, 删除, 排序, 修改, 使用Qt制作应用界面, 使用sqlite3来保存用户书签数据, 能导出, 导入书签数据</li>
+                <li>技术栈: C++ Qt sqlite3</li>
+                <li>贡献: 功能需求分析, 结构设计, 代码实现</li>
+            </ul>
+        </li>
+        <li>
+            <h4>文本编辑器</h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/text-editor">https://github.com/go75/text-editor</a></li>
+                <li>项目介绍: 支持打开和保存文件, 支持设置文本字体颜色, 粗体, 斜体, 下划线, 大小, 种类, 复制, 粘贴, 剪贴</li>
+                <li>技术栈: C++ Qt</li>
+                <li>贡献: 需求分析, 功能设计, 代码实现</li>
+            </ul>
+        </li>
+        <li>
+            <h4>图片查看器</h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/image-display">https://github.com/go75/image-display</a></li>
+                <li>项目介绍: 使用Qt实现一个图片查看的功能, 支持导入多个图片, 查看图片, 切换图片, 缩放, 旋转</li>
+                <li>技术栈: C++ Qt</li>
+                <li>贡献: 需求分析, 概要设计, 代码实现</li>
+            </ul>
+        </li>
+    </ul>
 
-            <!-- 专业技能 -->
-            <section class="skill info-unit">
-                <h2>
-                    <i class="fa fa-code" aria-hidden="true"></i>专业技能</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>C++</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                    <li>
-                        <label>QT</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                    <li>
-                        <label>MySQL</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                    <li>
-                        <label>HTTP</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                    <li>
-                        <label>TCP</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                    <li>
-                        <label>UDP</label>
-                        <progress value="70" max="100"></progress>
-                        熟悉
-                    </li>
-                </ul>
-            </section>
+    <hr>
 
-            <!-- <section class="qrcode info-unit">
-                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
-                <hr/>
-                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
-            </section> -->
+    <h3>个人总结</h3>
+    <blockquote>
+        喜欢在学习过程中记录和分享自己所学, 博客地址: <a href="https://blog.csdn.net/qq_67733273">https://blog.csdn.net/qq_67733273</a>
+    </blockquote>
+</body>
+</html>
 
-            <!-- 技术栈 -->
-            <div class="stack info-unit">
-                <h2><i class="fa fa-bars" aria-hidden="true"></i>其他</h2>
-                <hr/>
-                Linux, Git, Markdown, Shell, Docker
-                <br>
-                操作系统, 计算机网络, 数据结构
-            </div>
-        </section>
-
-        <section class="main">
-
-            <!-- 工作经历 -->
-            <!-- <section class="work info-unit">
-                <h2>
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                </h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                            <span>[经历1]XX公司－前端开发工程师（实习）</span>
-                            <time>2016.X 至 2017.X</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>深度参与XX项目迭代XX的前端开发工作，独立承担并完成XX、XX、XXXX等功能点的开发，主要维护并修复XX、XX、XX等功能点bug若干。项目采用技术栈
-                                <mark>React+React Router+Node.js+SASS</mark>，实现
-                                <mark>前后端完全分离</mark>。</li>
-                            <li>配合UI和后端，根据产品需求提供H5页面嵌入到后台模板，要求
-                                <mark>移动端显示正常</mark>。</li>
-                            <li>主要参与XXXXXXX的静态页面开发工作，要求
-                                <mark>在支付宝环境下完全兼容</mark>。</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>[经历2]XX－前端开发工程师（实习）</span>
-                            <time>20XX.10-20XX.7</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>深度参与公司主线产品「XXXX」的前端开发工作，完成帖子快捷回复、
-                                <mark>全站图片懒加载</mark>、活动banner、帖子管理（使用Yii框架）等功能。项目采用技术栈phpWind+NAMP。
-                                <a href="http://itsay.tech/162/" target="_blank">
-                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
-                            <li>主要参与公司产品「XXXX」的前端开发工作，实现接入微博、微信、QQ等
-                                <mark>第三方账号登录</mark>等功能。项目采用技术栈WordPress+NAMP。</li>
-                            <li>活动页面的开发（七夕活动、抽奖活动以及承接外包页面）。</li>
-                            <li>论坛
-                                <mark>图片增量备份</mark>（CentOS+vsftpd+crontab）
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section> -->
-
-            <section class="work info-unit">
-                <h2>
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    获得证书
-                </h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                            <span>字节跳动青训营证书</span>
-                            <time>2023.5-2023.6</time>
-                        </h3>
-                        <ul>
-                            <li>证书地址: <a href="assets/images/cert.png" target="_blank">https://go75.github.io/assets/images/cert.png</a></li>
-                            <li>简介: 青训营是字节跳动 ByteTech 社区发起的技术培训 & 人才选拔项目，面向在校大学生，旨在培养优秀且具有职业竞争力的开发工程师。</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- 项目经验 -->
-            <section class="project info-unit">
-                <h2>
-                    <i class="fa fa-terminal" aria-hidden="true"></i>
-                    项目经历
-                </h2>
-                <hr/>
-                <ul>
-                    <!-- <li>
+    <!-- <li>
                         <h3>
                             <span>开源社区项目 OpenIM</span>
                             <time>2023.5-至今</time>
@@ -328,105 +226,3 @@
                             <li>效果: 使用该框架能大大简化web开发的难度, 同时使用该框架完成简单的web服务器</li>
                         </ul>
                     </li> -->
-                    <li>
-                        <h3>
-                            <span>文件共享系统</span>
-                            <time>2022.7-2022.9</time>
-                        </h3>
-                        <ul>
-                            <li>客户端代码地址: <a href="https://github.com/go75/file-sharing-client" target="_blank">https://github.com/go75/file-sharing-client</a></li>
-                            <li>服务端代码地址: <a href="https://github.com/go75/file-sharing-server" target="_blank">https://github.com/go75/file-sharing-server</a></li>
-                            <li>项目介绍: P2P共享文件软件的制作, 设计环境是mysql8, ubuntu22.04与QT5.15. 实现的功能包括用户的注册与登录, 用户共享文件的上传, 删除与下载. 同时也具有精确搜索的功能, 用户可以通过搜索结果确定要下载的文件. 服务端保存用户数据, 用户共享文件的基本信息</li>
-                            <li>技术栈: C++ Qt MySQL TCP</li>
-                            <li>贡献: 需求分析, 架构设计, 数据库设计, 通信协议设计, 接口设计, 代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>即时通信系统</span>
-                            <time>2023.5-2022.6</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/im" target="_blank">https://github.com/go75/im</a></li>
-                            <li>项目介绍: 用户登录注册, 添加好友, 创建群聊, 添加群聊, 实现私聊, 群聊, 支持文本消息, 图片消息, 录音等多种消息消息类型, 支持玩家间五子棋对战</li>
-                            <li>贡献: 需求分析, 系统设计, 数据库设计, 项目结构设计, 通信协议设计, 接口设计, 业务拆分, 文档编写, 通信协议的封装, 使用生产者、消费者等模型来处理数据, 设计统一消息格式, 前端页面编写, 后端代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>书签管理器</span>
-                            <time>2022.6-2022.7</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/bookmark-manager-" target="_blank">https://github.com/go75/bookmark-manager-</a></li>
-                            <li>项目介绍: 管理用户的书签内容, 支持书签的插入, 删除, 排序, 修改, 使用Qt制作应用界面, 使用sqlite3来保存用户书签数据, 能导出, 导入书签数据</li>
-                            <li>技术栈: C++ Qt sqlite3</li>
-                            <li>贡献: 功能需求分析, 结构设计, 代码实现</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>文本编辑器</span>
-                            <time>2022.5-2022.6</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/text-editor" target="_blank">https://github.com/go75/text-editor</a></li>
-                            <li>项目介绍: 支持打开和保存文件, 支持设置文本字体颜色, 粗体, 斜体, 下划线, 大小, 种类, 复制, 粘贴, 剪贴</li>
-                            <li>技术栈: C++ Qt</li>
-                            <li>贡献: 需求分析, 功能设计, 代码实现</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>图片查看器</span>
-                            <time>2022.5-2022.6</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/image-display" target="_blank">https://github.com/go75/image-display</a></li>
-                            <li>项目介绍: 使用Qt实现一个图片查看的功能, 支持导入多个图片, 查看图片, 切换图片, 缩放, 旋转</li>
-                            <li>技术栈: C++ Qt</li>
-                            <li>贡献: 需求分析, 概要设计, 代码实现</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- 个人总结 -->
-            <section class="work info-unit">
-                <h2><i class="fa fa-pencil" aria-hidden="true"></i>个人总结</h2>
-                <hr/>
-                <p>
-                    2023届字节跳动后端青训营成员
-                </p>
-                <p>
-                    热爱软件开发工作, 享受编程的乐趣
-                </p>
-                <p>
-                    喜欢记录和分享自己所学, 博客地址:
-                    <a href="https://blog.csdn.net/qq_67733273" target="_blank">https://blog.csdn.net/qq_67733273</a>
-                </p>
-            </section>
-        </section>
-    </article>
-
-    <footer class="footer">
-        <p>© 2023 陈序缘. 百尺竿头更进一步</p>
-    </footer>
-
-    <!-- 侧栏 -->
-    <aside>
-        <ul>
-            <li>
-                <a href="https://blog.csdn.net/qq_67733273" target="_blank">博客</a>
-            </li>
-            <li>
-                <a href="https://gitee.com/go75" target="_blank">Gitee</a>
-            </li>
-            <li>
-                <a href="https://github.com/go75" target="_blank">Github</a>
-            </li>
-        </ul>
-    </aside>
-</body>
-
-</html>
