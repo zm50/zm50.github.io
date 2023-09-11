@@ -1,21 +1,23 @@
 # GO语言篇之发布开源软件包
 
+@[toc]
+
 我们写GO语言程序的时候难免会引用第三方的软件包，那么你知道别人是怎么发布自己的软件包吗，别急，这篇博客教你怎么做
 
-新建仓库
+## 新建仓库
 ![Alt text](assets/images/1.png)
 
-拉取到本地
+## 拉取到本地
 ```sh
 git clone https://github.com/go75/my-package.git
 ```
 
-初始化项目
+## 初始化项目
 ```sh
 go mod init github.com/go75/my-package.git
 ```
 
-编写代码
+## 编写代码
 ```sh
 mkdir utils
 echo "
@@ -26,20 +28,18 @@ func PrintHello() {
 }" > utils/hello.go
 ```
 
-提交代码
+## 提交代码
 ```sh
 git add .
 git commit -m "update"
 git push
 ```
 
-发布
+## 发布
 ![Alt text](assets/images/2.png)
 ![Alt text](assets/images/3.png)
 
-引用软件包
-
-引用软件包
+## 引用软件包
 ```sh
 go get github.com/go75/my-package/utils
 ```
