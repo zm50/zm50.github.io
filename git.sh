@@ -1,4 +1,4 @@
 sh catalogue.sh
 git add .
-git commit -m "resume update"
+git commit -m "update"
 git push origin main
