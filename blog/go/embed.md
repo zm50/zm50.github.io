@@ -6,7 +6,7 @@
 embed是Go语言提供的一种机制，可使静态文件或文件夹嵌入Go语言程序中，使我们Go语言的可执行文件包含了这些数据，这样就可以只使用一个Go语言的可执行程序就能运行了
 
 ## 目录结构
-![目录结构](assets/images/5.png)
+![目录结构](https://img-blog.csdnimg.cn/bbde2b41344c4ff5b2da9d093131a905.png#pic_center)
 
 ## 文件转[]byte
 ```go

@@ -29,7 +29,7 @@ func main() {
 ## C文件嵌入GO代码
 目录结构，注意c代码文件和main.go处于同一级别
 
-![Alt text](assets/images/cgo.png)
+![目录结构](https://img-blog.csdnimg.cn/021ba7d40ada45c3accc0fd8cb9e79ec.png#pic_center)
 ```c
 // clib.c
 #include <stdio.h>
