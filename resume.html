@@ -44,7 +44,7 @@
     <h3>专业技能</h3>
     <ul>
         <li>
-            C++, QT,MySQL, HTTP, TCP, UDP, Linux, Git, Markdown, Shell, Docker, 操作系统, 计算机网络, 数据结构
+            Go, C++, QT, MySQL, HTTP, TCP, UDP, Linux, Git, Markdown, Shell, Docker, 操作系统, 计算机网络, 数据结构
         </li>
     </ul>
 
@@ -110,6 +110,104 @@
                 <li>贡献: 需求分析, 概要设计, 代码实现</li>
             </ul>
         </li>
+        <li>
+            <h4>
+                <span>开源社区项目 OpenIM</span>
+            </h4>
+            <ul>
+                <li class="content-body">
+                    <span class="content-left">项目地址: </span>
+                    <a class="content-right" href="https://github.com/OpenIMSDK/Open-IM-Server" target="_blank">
+                        https://github.com/OpenIMSDK/Open-IM-Server
+                    </a>
+                </li>
+
+                <li>
+                    <span class="content-left">
+                        项目介绍:     
+                    </span>
+                    <span class="content-right">
+                        实现即时通讯服务器, 一切皆消息, 极佳的拓展性, 使用微服务架构, 使开发者能免费快速的集成即时通讯和实时网络功能, 并确保业务数据的安全性和隐私性
+                    </span>
+                </li>
+                <li>技术栈: Gin+Gorm+GRPC+ETCD+Mongodb+Redis</li>
+                <li>贡献: 负责小部分数据传输, 网关模块的代码编写</li>
+                <li>效果: Github具有10000+ Star</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>IM即时通信系统</span>
+            </h4>
+            <ul>
+                <li>单体项目地址: <a href="https://github.com/go75/im" target="_blank">https://github.com/go75/im</a></li>
+                <li>网关层项目地址: <a href="https://github.com/go75/im-api" target="_blank">https://github.com/go75/im-api</a></li>
+                <li>服务层项目地址: <a href="https://github.com/go75/im-srv" target="_blank">https://github.com/go75/im-srv</a></li>
+                <li>功能介绍: 用户登录注册, 添加好友, 创建群聊, 添加群聊, 实现私聊, 群聊, 支持文本消息, 图片消息, 录音等多种消息消息类型, 支持玩家间五子棋对战</li>
+                <li>项目介绍: 多人在线聊天的即时通信系统, 使用HTTP+WebSocket协议来实现前后端数据交互, 前端使用Vue+TypeScript编写, 后端分为单体架构和分布式架构, 两种架构总体实现的功能一致, 分布式架构使用ETCD进行服务注册和发现, GRPC来提供远程服务</li>
+                <li>技术栈: Gin+Gorm+Swagger+WebSocket+GRPC+ETCD+Vue+TypeScript</li>
+                <li>贡献: 需求分析, 系统设计, 数据库设计, 项目结构设计, 通信协议设计, 接口设计, 业务拆分, 文档编写, 基于WebSocket的封装, 使用生产者、消费者等模型来处理数据, 设计统一消息格式, 前端页面编写, 后端代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>代码生成器</span>
+            </h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/gen" target="_blank">https://github.com/go75/gen</a></li>
+                <li>项目介绍: 根据数据库信息来一键生成Model层, Dao层, Service层, Controller层代码, 快速生成项目骨架, 具有丰富的配置, 可以通过修改配置信息来控制生成的代码</li>
+                <li>技术栈: Go+MySQL</li>
+                <li>贡献: 需求分析, 后端项目结构分析, 代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>P2P聊天项目</span>
+            </h4>
+            <ul>
+                <li>项目前端地址: <a href="https://github.com/go75/chat-p2p-front" target="_blank">https://github.com/go75/chat-p2p-front</a></li>
+                <li>项目后端地址: <a href="https://github.com/go75/chat-p2p-srv" target="_blank">https://github.com/go75/chat-p2p-srv</a></li>
+                <li>项目介绍: 聊天过程客户端之间直接通信, 不通过服务端转发</li>
+                <li>实现原理: 服务端交换客户端之间通过网络NAPT映射后的公网地址, 客户端拿到对方的地址后使用无连接的UDP通信</li>
+                <li>技术栈: Go+UDP+Wails+Vue</li>
+                <li>贡献: 系统技术分析, 原理分析, 设计消息格式, 前后端代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>五子棋项目</span>
+            </h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/five-chess" target="_blank">https://github.com/go75/five-chess</a></li>
+                <li>演示地址: <a href="https://go75.github.io/chess" target="_blank">https://go75.github.io/chess</a></li>
+                <li>项目介绍: 使用WebAssembly的网页版的五子棋人机对战</li>
+                <li>技术栈: Golang+WebAssembly</li>
+                <li>贡献: 分析业务流程, 人机原理分析, 简单人机设计, go语言wasm代码编写</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>长连接框架</span>
+            </h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/tcpx" target="_blank">https://github.com/go75/tcpx</a></li>
+                <li>项目介绍: 实现tcp长连接并发框架用于可靠传输, 对zinx进行优化, 实现读写分成固定区间, 读区处理用户连接数据的读取, 写区处理用户业务, 使用固定协程数量处理高并发场景, 框架内部运行后没有协程创建和销毁的开销, 用固定的协程数量处理所有客户端连接</li>
+                <li>技术栈: Go+TCP</li>
+                <li>贡献: 提出想法, 设计基础架构, 技术分析, 代码实现</li>
+            </ul>
+        </li>
+        <li>
+            <h4>
+                <span>web框架</span>
+            </h4>
+            <ul>
+                <li>项目地址: <a href="https://github.com/go75/boot" target="_blank">https://github.com/go75/boot</a></li>
+                <li>项目介绍: 轻量级web框架</li>
+                <li>技术栈: Go+HTTP</li>
+                <li>贡献: 分析基础架构, 架构设计, api设计, 设计路由树, 分组控制, 上下文, 中间件, http请求与响应, 代码编写</li>
+                <li>效果: 使用该框架能大大简化web开发的难度, 同时使用该框架完成简单的web服务器</li>
+            </ul>
+        </li>
     </ul>
 
     <hr>
@@ -120,109 +218,3 @@
     </blockquote>
 </body>
 </html>
-
-    <!-- <li>
-                        <h3>
-                            <span>开源社区项目 OpenIM</span>
-                            <time>2023.5-至今</time>
-                        </h3>
-                        <ul>
-                            <li class="content-body">
-                                <span class="content-left">项目地址: </span>
-                                <a class="content-right" href="https://github.com/OpenIMSDK/Open-IM-Server" target="_blank">
-                                    https://github.com/OpenIMSDK/Open-IM-Server
-                                </a>
-                            </li>
-
-                            <li>
-                                <span class="content-left">
-                                    项目介绍:     
-                                </span>
-                                <span class="content-right">
-                                    实现即时通讯服务器, 一切皆消息, 极佳的拓展性, 使用微服务架构, 使开发者能免费快速的集成即时通讯和实时网络功能, 并确保业务数据的安全性和隐私性
-                                </span>
-                            </li>
-                            <li>技术栈: Gin+Gorm+GRPC+ETCD+Mongodb+Redis</li>
-                            <li>贡献: 负责小部分数据传输, 网关模块的代码编写</li>
-                            <li>效果: Github具有10000+ Star</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>IM即时通信系统</span>
-                            <time>2023.5-2023.6</time>
-                        </h3>
-                        <ul>
-                            <li>单体项目地址: <a href="https://github.com/go75/im" target="_blank">https://github.com/go75/im</a></li>
-                            <li>网关层项目地址: <a href="https://github.com/go75/im-api" target="_blank">https://github.com/go75/im-api</a></li>
-                            <li>服务层项目地址: <a href="https://github.com/go75/im-srv" target="_blank">https://github.com/go75/im-srv</a></li>
-                            <li>功能介绍: 用户登录注册, 添加好友, 创建群聊, 添加群聊, 实现私聊, 群聊, 支持文本消息, 图片消息, 录音等多种消息消息类型, 支持玩家间五子棋对战</li>
-                            <li>项目介绍: 多人在线聊天的即时通信系统, 使用HTTP+WebSocket协议来实现前后端数据交互, 前端使用Vue+TypeScript编写, 后端分为单体架构和分布式架构, 两种架构总体实现的功能一致, 分布式架构使用ETCD进行服务注册和发现, GRPC来提供远程服务</li>
-                            <li>技术栈: Gin+Gorm+Swagger+WebSocket+GRPC+ETCD+Vue+TypeScript</li>
-                            <li>贡献: 需求分析, 系统设计, 数据库设计, 项目结构设计, 通信协议设计, 接口设计, 业务拆分, 文档编写, 基于WebSocket的封装, 使用生产者、消费者等模型来处理数据, 设计统一消息格式, 前端页面编写, 后端代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>代码生成器</span>
-                            <time>2023.6-2023.7</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/gen" target="_blank">https://github.com/go75/gen</a></li>
-                            <li>项目介绍: 根据数据库信息来一键生成Model层, Dao层, Service层, Controller层代码, 快速生成项目骨架, 具有丰富的配置, 可以通过修改配置信息来控制生成的代码</li>
-                            <li>技术栈: Go+MySQL</li>
-                            <li>贡献: 需求分析, 后端项目结构分析, 代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>P2P聊天项目</span>
-                            <time>2023.4-2023.5</time>
-                        </h3>
-                        <ul>
-                            <li>项目前端地址: <a href="https://github.com/go75/chat-p2p-front" target="_blank">https://github.com/go75/chat-p2p-front</a></li>
-                            <li>项目后端地址: <a href="https://github.com/go75/chat-p2p-srv" target="_blank">https://github.com/go75/chat-p2p-srv</a></li>
-                            <li>项目介绍: 聊天过程客户端之间直接通信, 不通过服务端转发</li>
-                            <li>实现原理: 服务端交换客户端之间通过网络NAPT映射后的公网地址, 客户端拿到对方的地址后使用无连接的UDP通信</li>
-                            <li>技术栈: Go+UDP+Wails+Vue</li>
-                            <li>贡献: 系统技术分析, 原理分析, 设计消息格式, 前后端代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>五子棋项目</span>
-                            <time>2022.6-2022.7</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/five-chess" target="_blank">https://github.com/go75/five-chess</a></li>
-                            <li>演示地址: <a href="https://go75.github.io/chess" target="_blank">https://go75.github.io/chess</a></li>
-                            <li>项目介绍: 使用WebAssembly的网页版的五子棋人机对战</li>
-                            <li>技术栈: Golang+WebAssembly</li>
-                            <li>贡献: 分析业务流程, 人机原理分析, 简单人机设计, go语言wasm代码编写</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>长连接框架</span>
-                            <time>2022.3-2022.4</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/tcpx" target="_blank">https://github.com/go75/tcpx</a></li>
-                            <li>项目介绍: 实现tcp长连接并发框架用于可靠传输, 对zinx进行优化, 实现读写分成固定区间, 读区处理用户连接数据的读取, 写区处理用户业务, 使用固定协程数量处理高并发场景, 框架内部运行后没有协程创建和销毁的开销, 用固定的协程数量处理所有客户端连接</li>
-                            <li>技术栈: Go+TCP</li>
-                            <li>贡献: 提出想法, 设计基础架构, 技术分析, 代码实现</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>web框架</span>
-                            <time>2022.6-2022.7</time>
-                        </h3>
-                        <ul>
-                            <li>项目地址: <a href="https://github.com/go75/boot" target="_blank">https://github.com/go75/boot</a></li>
-                            <li>项目介绍: 轻量级web框架</li>
-                            <li>技术栈: Go+HTTP</li>
-                            <li>贡献: 分析基础架构, 架构设计, api设计, 设计路由树, 分组控制, 上下文, 中间件, http请求与响应, 代码编写</li>
-                            <li>效果: 使用该框架能大大简化web开发的难度, 同时使用该框架完成简单的web服务器</li>
-                        </ul>
-                    </li> -->
