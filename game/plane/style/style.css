@@ -6,7 +6,7 @@
 #win{
     width: 800px;
     height: 600px;
-    background: url("/plane/resource/img/background.png");
+    background: url("/game/plane/resource/img/background.png");
     margin: 0px auto;
     position: relative;
 }
