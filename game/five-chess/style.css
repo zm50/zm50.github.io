@@ -1,0 +1,23 @@
+#title {
+    text-align: center;
+}
+
+#chess {
+    display: block;
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px #b9b9b9, -5px -5px 5px #efefef;
+    cursor: pointer;
+}
+
+#chess {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#playerChess {
+    text-align: center;
+}
+
+#curRole {
+    text-align: center;
+}

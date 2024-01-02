@@ -3,47 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/favicon.ico">
-        <title>五子棋</title>
-        <script src="/assets/static/wasm_exec.js"></script>
-        <script>
-            const go = new Go();
-            WebAssembly.instantiateStreaming(fetch("/assets/static/main.wasm"), go.importObject).then((result) => go.run(result.instance));
-        </script>
-        
-        <style>
-            #title {
-                text-align: center;
-            }
-            #chess {
-                display: block;
-                margin: 50px auto;
-                box-shadow: 10px 10px 10px #b9b9b9, -5px -5px 5px #efefef;
-                cursor: pointer;
-            }
-            /* #restartDiv {
-                text-align: center;
-            }
-            #restart {
-                padding: 10px 20px;
-                background-color:aquamarine;
-                border-radius: 36px;
-                color: cornflowerblue;
-                font-weight: 720;
-                cursor: pointer;
-            } */
-            #chess {
-                background-color: antiquewhite;
-                text-align: center;
-            }
-            #playerChess {
-                text-align: center;
-            }
-            #curRole {
-                text-align: center;
-            }
-        </style>
-        
+        <link rel="shortcut icon" href="/assets/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+        <title>醉墨编程</title>
+        <link rel="stylesheet" type="text/css" href="/game/five-chess/style.css">
     </head>
     <header>
         <nav>
@@ -54,13 +17,15 @@
             <a href="/tips/">充电打赏</a>
         </nav>
     </header>
+
     <body>
         <h3 id="playerChess"></h3>
         <h3 id="curRole"></h3>
-        <canvas id="chess" width="450px" height="450px"></canvas>
+        <canvas id="board" width="450px" height="450px"></canvas>
+        <script src="/game/five-chess/game/init.js"></script>
+        <script src="/game/five-chess/game/utils.js"></script>
+        <script src="/game/five-chess/game/ai.js"></script>
+        <script src="/game/five-chess/game/game.js"></script>
+        <script src="/game/five-chess/game/main.js"></script>
     </body>
-    <footer>
-        醉墨编程 © 2024
-    </footer>
-    
 </html>
