@@ -1,9 +1,7 @@
 body {
     margin: 0;
     padding-top: 60px;
-    background:
-        linear-gradient(to bottom right, rgba(0, 255, 255, 1), rgba(0, 255, 255, 1) 33%, rgba(0, 191, 255, 0.8) 33%, rgba(0, 191, 255, 0.8) 66%, rgba(128, 0, 128, 0.6) 66%, rgba(128, 0, 128, 0.6) 100%), 
-        linear-gradient(to top left, rgba(0, 255, 255, 1), rgba(0, 255, 255, 1) 33%, rgba(0, 191, 255, 0.8) 33%, rgba(0, 191, 255, 0.8) 66%, rgba(255, 165, 0, 0.4) 66%, rgba(255, 165, 0, 0.4) 100%);
+    background-image: url(/assets/img/bg.svg);
 }
 
 header {

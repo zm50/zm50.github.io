@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
+    <title>醉墨编程</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<header>
+    <nav>
+        <a href="/">网站首页</a>
+        <a href="/code/">编程空间</a>
+        <a href="/game/">在线游戏</a>
+        <a href="/tool/">在线工具</a>
+        <a href="/tips/">充电打赏</a>
+    </nav>
+</header>
+
+<body>
+    <h1>World Editor</h1>
+    <canvas id="main"></canvas>
+    <script src="./game/init.js"></script>
+    <script src="./model/point.js"></script>
+    <script src="./model/edge.js"></script>
+    <script src="./model/graph.js"></script>
+    <script src="./game/main.js"></script>
+    <div id="controls">
+        <button onclick="addRandomPoint()">Add Point</button>
+        <button onclick="addRandomEdge()">Add Edge</button>
+    </div>
+</body>
+
+</html>
