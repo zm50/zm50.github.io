@@ -19,7 +19,7 @@ preview.onclick = () => {
     output.innerHTML = marked.parse(input.value)
 }
 
-mark2html.onclick = () => {
+md2html.onclick = () => {
     opt = 1
     output.innerText = marked.parse(input.value)
 }

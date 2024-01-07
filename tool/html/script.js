@@ -19,7 +19,7 @@ preview.onclick = () => {
     output.innerHTML = input.value
 }
 
-html2mark.onclick = () => {
+html2md.onclick = () => {
     opt = 1
     output.innerText = turn.turndown(input.value)
 }

@@ -1,15 +1,14 @@
-body {
-    margin: 0;
-}
-
 #head {
     position: fixed;
+    z-index: 1;
 }
 
 #editor {
+    position: fixed;
     display: flex;
     height: 100vh;
 }
+
 button {
     background-color: #3d9;
     width: 150px;
@@ -17,10 +16,10 @@ button {
 
 #input,
 #output {
-    flex: 1;
-    height: 100%;
+    width: 50vw;
     box-sizing: border-box;
     padding: 30px;
+    background-color: #fff;
 }
 
 #input {
