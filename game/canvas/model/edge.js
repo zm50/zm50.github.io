@@ -8,6 +8,10 @@ class Edge {
         return ((this.p1.equals(edge.p1) && this.p2.equals(edge.p2)) || (this.p1.equals(edge.p2) && this.p2.equals(edge.p1)))
     }
 
+    includes(point) {
+        return point.equals(this.p1) || point.equals(this.p2)
+    }
+
     draw(ctx, width = 2, color = 'black') {
         ctx.beginPath()
         ctx.lineWidth = width

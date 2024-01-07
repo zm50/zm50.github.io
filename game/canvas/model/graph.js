@@ -12,6 +12,18 @@ class Graph {
         this.edges.push(edge)
     }
 
+    removePoint(point) {
+        let edges = this.getEdgesWithPoint(point)
+        for (let edge of edges) {
+            this.removeEdge(edge)
+        }
+        this.points.splice(this.points.indexOf(point), 1)
+    }
+
+    removeEdge(edge) {
+        this.edges.splice(this.edges.indexOf(edge), 1)
+    }
+
     containPoint(point) {
         return this.points.find((p) => p.equals(point))
     }
@@ -36,12 +48,27 @@ class Graph {
         return true
     }
 
+    getEdgesWithPoint(point) {
+        let edges = []
+        for (let edge of this.edges) {
+            if (edge.includes(point)) {
+                edges.push(edge)
+            }
+        }
+        return edges
+    }
+
+    dispose() {
+        this.points.length = 0
+        this.edges.length = 0
+    }
+
     draw(ctx) {
-        for (const point of this.points) {
+        for (let point of this.points) {
             point.draw(ctx)
         }
 
-        for (const edge of this.edges) {
+        for (let edge of this.edges) {
             edge.draw(ctx)
         }
     }
@@ -59,12 +86,38 @@ function addRandomPoint() {
 function addRandomEdge() {
     let index1 = Math.floor(Math.random() * graph.points.length)
     let index2 = Math.floor(Math.random() * graph.points.length)
-    let p1 = graph.points[index1]
-    let p2 = graph.points[index2]
-    let success = graph.tryAddEdge(new Edge(p1,p2))
+    let success = graph.tryAddEdge(new Edge(graph.points[index1], graph.points[index2]))
     if (!success) {
         console.log("add edge fail")
     }
+    ctx.clearRect(0, 0, main.width, main.height)
+    graph.draw(ctx)
+}
+
+function removeRandomPoint() {
+    if (graph.points.length == 0) {
+        console.log('no points')
+        return
+    }
+    let index = Math.floor(Math.random() * graph.points .length)
+    graph.removePoint(graph.points[index])
+    ctx.clearRect(0, 0, main.width, main.height)
+    graph.draw(ctx)    
+}
+
+function removeRandomEdge() {
+    if (graph.edges.length == 0) {
+        console.log('no edges')
+        return
+    }
+    let index = Math.floor(Math.random() * graph.edges.length)
+    graph.removeEdge(graph.edges[index])
+    ctx.clearRect(0, 0, main.width, main.height)
+    graph.draw(ctx)
+}
+
+function removeAll() {
+    graph.dispose()
     ctx.clearRect(0, 0, main.width, main.height)
     graph.draw(ctx)
 }
