@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding-top: 60px;
     background-image: url(/assets/img/bg.svg);
+    background-repeat: repeat-y;
 }
 
 header {
