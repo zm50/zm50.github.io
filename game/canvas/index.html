@@ -20,17 +20,15 @@
 </header>
 
 <body>
-    <canvas id="main"></canvas>
-    <script src="/game/canvas/game/init.js"></script>
-    <script src="/game/canvas/model/point.js"></script>
-    <script src="/game/canvas/model/edge.js"></script>
-    <script src="/game/canvas/model/graph.js"></script>
-    <script src="/game/canvas/game/main.js"></script>
+    <canvas id="win"></canvas>
+    <script src="./game/init.js"></script>
+    <script src="./game/util.js"></script>
+    <script src="./model/point.js"></script>
+    <script src="./model/edge.js"></script>
+    <script src="./model/graph.js"></script>
+    <script src="./model/graphEditor.js"></script>
+    <script src="./game/main.js"></script>
     <div id="controls">
-        <button onclick="addRandomPoint()">随缘添加点</button>
-        <button onclick="removeRandomPoint()">随缘删除点</button>
-        <button onclick="addRandomEdge()">随缘添加边</button>
-        <button onclick="removeRandomEdge()">随缘删除边</button>
         <button onclick="removeAll()">清空画布</button>
     </div>
 </body>

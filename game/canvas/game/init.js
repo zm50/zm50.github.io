@@ -1,3 +1,3 @@
-var ctx = main.getContext('2d')
-main.width = 800
-main.height = 800
+var ctx = win.getContext('2d')
+win.width = 700
+win.height = 700

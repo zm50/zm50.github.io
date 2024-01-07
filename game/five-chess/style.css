@@ -1,9 +1,9 @@
 canvas {
     display: block;
     margin: 50px auto;
-    box-shadow: 10px 10px 10px #b9b9b9, -5px -5px 5px #efefef;
+    box-shadow: 0 10px 4px #ccc;
     cursor: pointer;
-    background-color: antiquewhite;
+    background-color: #fdb;
     text-align: center;
 }
 
