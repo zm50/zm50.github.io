@@ -1,6 +1,7 @@
 input.value = '<h1>醉墨居士</h1>'
 output.innerHTML = input.value
 opt = 0
+var turn = new TurndownService()
 input.oninput = (evt) => {
     input.value = evt.target.value
     switch (opt) {
@@ -8,7 +9,7 @@ input.oninput = (evt) => {
             output.innerHTML = input.value
             break
         case 1:
-            output.innerText = html2md(input.value)
+            output.innerText = turn.turndown(input.value)
             break
     }
 }
@@ -20,5 +21,5 @@ preview.onclick = () => {
 
 html2mark.onclick = () => {
     opt = 1
-    output.innerText = html2md(input.value)
+    output.innerText = turn.turndown(input.value)
 }
