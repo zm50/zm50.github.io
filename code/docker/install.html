@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
+    <title>醉墨编程</title>
+</head>
+<header>
+    <nav>
+        <a href="/">网站首页</a>
+        <a href="/code/">编程空间</a>
+        <a href="/game/">在线游戏</a>
+        <a href="/tool/">在线工具</a>
+        <a href="/tips/">充电打赏</a>
+    </nav>
+</header>
+
+<body>
+    <article>
+        <h1>Debian安装Docker环境</h1>
+
+        <p>@[toc]</p>
+        
+        <h3>删除旧版本</h3>
+        
+        <p><code>sh
+        sudo apt-get remove docker docker-engine docker.io
+        </code></p>
+        
+        <h3>更新系统</h3>
+        
+        <p><code>sh
+        apt update
+        apt upgrade -y
+        </code></p>
+        
+        <h3>安装Docker</h3>
+        
+        <p><code>sh
+        apt install curl vim wget gnupg dpkg apt-transport-https lsb-release ca-certificates
+        </code></p>
+        
+        <h3>设置Docker的GPG公钥</h3>
+        
+        <p><code>sh
+        curl -sSL https://download.docker.com/linux/debian/gpg | gpg --dearmor &gt; /usr/share/keyrings/docker-ce.gpg
+        </code></p>
+        
+        <h3>为Docker设置清华源</h3>
+        
+        <p><code>sh 
+        echo &quot;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-ce.gpg] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian $(lsb_release -sc) stable&quot; &gt; /etc/apt/sources.list.d/docker.list
+        </code></p>
+        
+        <h3>安装Docker</h3>
+        
+        <p><code>sh
+        apt update
+        apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+        </code></p>
+
+        <h3>配置Docker</h3>
+        <p><code>
+            # 查看Docker版本
+            <br>
+            docker version
+            <br>
+            # 启动docker
+            <br>
+            sudo systemctl start docker
+            <br>
+            # 检测docker状态
+            <br>
+            systemctl status docker
+            <br>
+            # 设置docker开机自启动
+            <br>
+            sudo systemctl enable docker
+        </code></p>
+        
+        <h3>配置普通用户权限</h3>
+        <p><code>
+            # 添加docker组
+            <br>
+            sudo groupadd docker
+            <br>
+            # 添加用户至docker组
+            <br>
+            sudo usermod -aG docker $USER
+            <br>
+            # 更新docker组
+            <br>
+            newgrp docker
+        </code></p>
+    </article>
+</body>
+
+<footer>
+    醉墨编程 © 2024
+</footer>
+
+</html>

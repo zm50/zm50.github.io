@@ -6,27 +6,31 @@
 #editor {
     position: fixed;
     display: flex;
-    height: 100vh;
+    width: 100vw;
 }
 
 button {
-    background-color: #3d9;
+    background-color: #6f6;
     width: 150px;
 }
 
 #input,
 #output {
-    width: 50vw;
-    box-sizing: border-box;
-    padding: 30px;
-    background-color: #fff;
-}
-
-#input {
-    border: none;
-    border-right: 1px solid #ccc;
-    resize: none;
-    outline: none;
+    flex: 1;
+    height: 90vh;
+    border: 1px solid #aaa;
     font-size: 16px;
     background-color: #eee;
+}
+
+#input{
+    padding: 30px 10px 10vh 10px;
+    resize: none;
+    outline: none;
+}
+
+#output {
+    padding: 0px 10px 10vh 10px;
+    word-wrap: break-word;
+    overflow: auto;
 }
