@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/style/style.css">
+    <title>醉墨编程</title>
+</head>
+<header>
+    <nav>
+        <a href="/">网站首页</a>
+        <a href="/code/">编程空间</a>
+        <a href="/game/">在线游戏</a>
+        <a href="/tool/">在线工具</a>
+        <a href="/tips/">充电打赏</a>
+    </nav>
+</header>
+
+<body>
+    <article id="content">
+    </article>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+        let path = window.location.hash.substring(1)
+        if (!path) {
+            content.innerHTML = '<h2>文件资源不存在</h2>'
+        } else {
+            var xhr;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest()
+            } else {
+                xhr = new ActiveXObject(Microsoft.XMLHttp)
+            }
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var s = marked.parse(xhr.responseText)
+                    content.innerHTML = s
+                }
+            }
+            xhr.open("GET", "https://go75.github.io/blog/" + path)
+            xhr.send()
+        }
+    </script>
+</body>
+
+</html>
