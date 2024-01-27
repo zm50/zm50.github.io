@@ -59,20 +59,20 @@ function updateRocks() {
     for (let i = 0; i < ROCK_COUNT; i++) {
         let rock = rocks[i]
         rock.move()
-
+        if (rock.type == 0) {
+            let angle = (rock.angle + 2) % 360
+            rock.rotate(angle)
+        }
         if (rock.cross(player)) {
             switch (rock.type) {
                 // rock
                 case 0:
-                    let angle = (rock.angle + 2) % 360
-                    rock.rotate(angle)
                     player.hp -= ROCK_HURT
                     if (player.hp <= 0) {
                         player.gameOver()
                         return
                     }
                     hp.style.width = player.hp + 'px'
-
                     break
 
                 // shield

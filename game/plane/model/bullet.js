@@ -48,6 +48,7 @@ function crashProcess() {
             if (bullet.cross(rock)) {
                 let randNum = Math.random()
                 if (randNum < TOOL_PROBABILITY) {
+                    rock.rotate(0)
                     if (randNum < TOOL_PROBABILITY / 2) {
                         rock.img.src = SHIELD_SRC
                         rock.type = 1
