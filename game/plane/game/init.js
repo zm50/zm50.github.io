@@ -12,7 +12,7 @@ var LIGHT_SRC = PERFIX_SRC + 'gun.png'
 
 var PLAYER_SPEED = 20
 var BULLET_SPEED = 20
-var MAX_ROCK_SPEED_X = 3
+var MAX_ROCK_SPEED_X = 2
 var MIN_ROCK_SPEED_Y = 3
 var VAR_ROCK_SPEED_Y = 3
 
