@@ -9,12 +9,12 @@
 
 ## 拉取到本地
 ```sh
-git clone https://github.com/go75/my-package.git
+git clone https://github.com/zm50/my-package.git
 ```
 
 ## 初始化项目
 ```sh
-go mod init github.com/go75/my-package.git
+go mod init github.com/zm50/my-package.git
 ```
 
 ## 编写代码
@@ -41,7 +41,7 @@ git push
 
 ## 引用软件包
 ```sh
-go get github.com/go75/my-package/utils
+go get github.com/zm50/my-package/utils
 ```
 ![引用软件包](https://img-blog.csdnimg.cn/3c3d2e524ada48a3b8d8bdfacdf32ade.png#pic_center)
 

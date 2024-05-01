@@ -2,7 +2,7 @@ var win = document.getElementById('win')
 var score = document.getElementById('score')
 var hp = document.getElementById('hp')
 
-var PERFIX_SRC = 'https://go75.github.io/game/plane/resource/img/'
+var PERFIX_SRC = 'https://zm50.github.io/game/plane/resource/img/'
 
 var PlAYER_SRC = PERFIX_SRC + 'player.png'
 var BULLET_SRC = PERFIX_SRC + 'bullet.png'
